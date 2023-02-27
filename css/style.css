@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    overflow: hidden;
+}
+header figure img{
+    float: left;
+    width: 20%;
+    height: 50%;
+}
+header figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite alternate-reverse;
+}
+@keyframes slider{
+    0%{left: 0%;}
+    20%{left: -100%;}
+    25%{left: -100%;}
+    455%{left: -200%;}
+    50%{left: -200%;}
+    70%{left: -300%;}
+    75%{left: -300%;}
+    95%{left: -400%;}
+    100%{left: -400%;}
+}
+nav{
+    height: 100px;
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+nav li{
+    padding: 30px;
+    display: inline;
+    line-height: 100px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+.sekcja1, .sekcja2, .sekcja3{
+    background-color: lightgray;
+    
+}
+.sekcja1 h2, .sekcja2 h2, .sekcja3 h2{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+}
+
+.sekcja1 p, .sekcja2 p, .sekcja3 p{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    font-family: 'Righteous', cursive;
+}
+.galeria{
+    text-align: center;
+    padding: 10px
+}
+footer{
+    height: 100px;
+    background-color: black;
+}
+.middle{
+    text-align: center;
+}
+.middle img{
+    width: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#parallax1{
+    height:40vh;
+    width:100%;
+    background-image:url("../img/zdjecie3.jpg");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+#parallax2{
+    height:60vh;
+    width:100%;
+    background-image:url("../img/zdjecie2.jpg");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+#parallax3{
+    height:80vh;
+    width:100%;
+    background-image:url("../img/zdjecie4.jpg");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+@media(max-width:500px){
+    nav li{
+        padding: 15px;
+    }
+    nav a{
+         font-size: 1.5em;
+    }
+    .sekcja1 h2, .sekcja2 h2, .sekcja3 h2{
+        padding-left: 50px;
+        padding-right: 50px;    
+        font-size: 1.8em;
+    }
+    .sekcja1 p, .sekcja2 p, .sekcja3 p{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        font-size: 1.2em;
+    }
+    .galeria img{
+        width: 200px;
+    }
+}
+@media(max-width:800px) and (min-width:501px){
+    nav li{
+        padding: 15px;
+    }
+    nav a{
+         font-size: 1.7em;
+    }
+    .sekcja1 h2, .sekcja2 h2, .sekcja3 h2{
+        padding-left: 50px;
+        padding-right: 50px;    
+        font-size: 1.8em;
+    }
+    .sekcja1 p, .sekcja2 p, .sekcja3 p{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        font-size: 1.3em;
+    }
+    .galeria img{
+        width: 250px;
+    }
+}
